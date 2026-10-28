@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #111111;
+color: white;
+line-height: 1.7;
+}
+
+/* Header */
+header {
+background-color: #000000;
+color: #D4AF37;
+text-align: center;
+padding: 40px 20px;
+border-bottom: 3px solid #D4AF37;
+}
+
+header h1 {
+font-size: 34px;
+margin: 0 0 10px;
+}
+
+header p {
+color: white;
+margin: 0;
+}
+
+/* Navigation */
+nav {
+background-color: #222222;
+text-align: center;
+padding: 15px 10px;
+border-bottom: 1px solid #D4AF37;
+}
+
+nav a {
+display: inline-block;
+color: #D4AF37;
+text-decoration: none;
+font-weight: bold;
+margin: 5px 12px;
+}
+
+nav a:hover {
+color: white;
+}
+
+/* Main content */
+main {
+max-width: 1000px;
+width: 90%;
+margin: 30px auto;
+}
+
+/* Each section */
+section {
+display: block;
+background-color: #1C1C1C;
+border: 1px solid #D4AF37;
+border-radius: 12px;
+padding: 25px;
+margin-bottom: 25px;
+}
+
+section h2 {
+color: #D4AF37;
+text-align: center;
+margin-top: 0;
+}
+
+section p {
+text-align: center;
+}
+
+/* Family values list */
+#values ul {
+max-width: 250px;
+margin: 0 auto;
+padding-left: 30px;
+}
+
+/* Contact section */
+#contact {
+text-align: center;
+}
+
+#contact a {
+color: #D4AF37;
+font-weight: bold;
+}
+
+#contact .whatsapp-button {
+display: inline-block;
+background-color: #D4AF37;
+color: #111111;
+text-decoration: none;
+padding: 12px 22px;
+border-radius: 8px;
+margin-top: 10px;
+}
+
+#contact .whatsapp-button:hover {
+background-color: white;
+}
+
+/* Footer */
+footer {
+background-color: #000000;
+color: #D4AF37;
+text-align: center;
+padding: 20px;
+border-top: 2px solid #D4AF37;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+header h1 {
+font-size: 26px;
+}
+
+main {
+    width: 94%;
+}
+
+section {
+    padding: 18px;
+}
+
+nav a {
+    margin: 5px 7px;
+}
+
+}
+/* FAMILY PHOTO GALLERY */
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+margin-top: 25px;
+}
+
+.photo-card {
+background-color: #111111;
+border: 2px solid #D4AF37;
+border-radius: 12px;
+overflow: hidden;
+text-align: center;
+transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+transform: translateY(-5px);
+}
+
+.photo-card img {
+display: block;
+width: 100%;
+height: 220px;
+object-fit: cover;
+}
+
+.photo-card h3 {
+color: #D4AF37;
+padding: 10px;
+margin: 0;
+}
+
+/* Make the gallery responsive */
+@media (max-width: 700px) {
+.gallery {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+
+@media (max-width: 450px) {
+.gallery {
+grid-template-columns: 1fr;
+}
+}
+/* FAMILY TREE DESIGN */
+
+#family-tree {
+text-align: center;
+background: linear-gradient(135deg, #111111, #242014);
+padding: 35px 20px;
+border: 2px solid #D4AF37;
+border-radius: 15px;
+}
+
+#family-tree > p {
+color: #eeeeee;
+margin-bottom: 30px;
+}
+
+.family-tree {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+.generation {
+display: flex;
+justify-content: center;
+align-items: stretch;
+flex-wrap: wrap;
+gap: 25px;
+width: 100%;
+}
+
+.family-card {
+width: 210px;
+max-width: 100%;
+padding: 20px 12px;
+background-color: #080808;
+border: 2px solid #D4AF37;
+border-radius: 12px;
+box-shadow: 0 5px 15px rgba(212, 175, 55, 0.15);
+transition: transform 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+.family-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 20px rgba(212, 175, 55, 0.35);
+}
+
+.family-icon {
+display: block;
+font-size: 38px;
+margin-bottom: 8px;
+}
+
+.family-card h3 {
+color: #D4AF37;
+margin: 5px 0;
+}
+
+.family-card p {
+color: #eeeeee;
+font-size: 14px;
+margin-bottom: 0;
+}
+
+/* GOLD CONNECTING LINES */
+
+.tree-connector {
+width: 3px;
+height: 35px;
+background-color: #D4AF37;
+margin: 0 auto;
+}
+
+/* SMALL SCREEN DESIGN */
+
+@media (max-width: 500px) {
+.generation {
+gap: 12px;
+}
+
+.family-card {
+    width: 145px;
+    padding: 15px 8px;
+}
+
+.family-icon {
+    font-size: 30px;
+}
+
+.family-card h3 {
+    font-size: 15px;
+}
+
+}
+/* Family Photo Gallery */
+#gallery {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111111;
+    color: white;
+}
+
+#gallery h2 {
+    color: gold;
+    font-size: 30px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.gallery-card {
+    width: 250px;
+    padding: 15px;
+    background: #222222;
+    border: 2px solid gold;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-card h3 {
+    color: gold;
+}
+
+@media (max-width: 600px) {
+    .gallery-card {
+        width: 90%;
+    }
+}
+/* Social Media Buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid gold;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+/* Instagram */
+.instagram {
+    background: #C13584;
+}
+
+/* Facebook */
+.facebook {
+    background: #1877F2;
+}
+
+/* WhatsApp */
+.whatsapp {
+    background: #128C7E;
+}
+
+/* Hover Effect */
+.social-btn:hover {
+    background: gold;
+    color: black;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+/* Mobile Phone Display */
+@media (max-width: 600px) {
+    .social-buttons {
+        flex-direction: column;
+    }
+
+    .social-btn {
+        width: 180px;
+        text-align: center;
+    }
+}
